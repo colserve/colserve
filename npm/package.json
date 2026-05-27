@@ -1,0 +1,30 @@
+{
+  "name": "colserve",
+  "version": "0.0.1",
+  "description": "Late-interaction visual document retrieval. Coming soon.",
+  "main": "index.js",
+  "type": "commonjs",
+  "private": false,
+  "keywords": [
+    "colpali",
+    "colqwen2",
+    "colsmol",
+    "late-interaction",
+    "vector-search",
+    "rag",
+    "visual-rag",
+    "document-ai",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Sammy Han <hello@colserve.dev>",
+  "license": "Apache-2.0",
+  "homepage": "https://colserve.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colserve/colserve.git"
+  },
+  "bugs": {
+    "url": "https://github.com/colserve/colserve/issues"
+  }
+}
