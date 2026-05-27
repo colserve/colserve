@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColServe — Late-interaction visual document retrieval in 5 lines of Python</title>
+  <meta name="description" content="Open-source Python library and hosted service for indexing PDFs and visual documents using ColPali, ColQwen2, and ColSmol. Multi-vector late-interaction retrieval. Five lines of Python.">
+  <meta property="og:title" content="ColServe">
+  <meta property="og:description" content="Late-interaction visual document retrieval in 5 lines of Python.">
+  <meta property="og:url" content="https://colserve.dev">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>ColServe</h1>
+      <p class="tagline">Late-interaction visual document retrieval in 5 lines of Python.</p>
+    </header>
+
+    <section class="snippet">
+      <pre><code>from colserve import Index, Retriever
+
+idx = Index(model="colsmol-256m", storage="qdrant://localhost:6333")
+idx.add_pdf("report.pdf")
+retriever = Retriever(idx)
+results = retriever.search("revenue by region", top_k=3)</code></pre>
+    </section>
+
+    <section class="pitch">
+      <p>
+        Open-source Python library and hosted service for indexing PDFs, scanned documents, and other visually-rich content.
+        Powered by the Col-family of multi-vector retrieval models (ColPali, ColQwen2, ColSmol).
+      </p>
+      <p>
+        Launching in 8 weeks. Get notified when it ships.
+      </p>
+    </section>
+
+    <section class="signup">
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/REPLACE_WITH_BUTTONDOWN_USERNAME"
+        method="post"
+        target="_blank"
+      >
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="you@company.com"
+          required
+        >
+        <button type="submit">Notify me</button>
+      </form>
+      <p class="signup-note">No spam. One email when ColServe is ready.</p>
+    </section>
+
+    <footer>
+      <a href="https://github.com/colserve/colserve">GitHub</a>
+      <span>·</span>
+      <a href="https://pypi.org/project/colserve/">PyPI</a>
+      <span>·</span>
+      <a href="https://www.npmjs.com/package/colserve">npm</a>
+      <span>·</span>
+      <a href="https://x.com/colserve">X</a>
+    </footer>
+  </main>
+</body>
+</html>
